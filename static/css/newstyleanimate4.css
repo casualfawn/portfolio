@@ -6,6 +6,8 @@
 body{
 	font-family: ubuntu;
 }
+
+
 .wrapper{
 	width: 1600px;
 	max-width: 100%;
@@ -59,13 +61,7 @@ body{
 	height: 100vh;
 }
 
-img {
-	border-radius: 30px;
-	padding-left: 12px;
-	box-shadow: 33 33 50px 50px #159957 inset;
-	width: 80%;
-	height: 80%;
-}
+
 
 
 
@@ -836,3 +832,115 @@ main .card:hover .content {
 	-o-transform: translateY(0%);
 }
 
+.background::after {
+    content: src="/static/img/vday2.gif" alt="this slowpoke moves"  width="250", height = '150', class = 'center';
+    background: rgba(45, 88, 35, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.center {
+  display: block;
+  font-size: 140px;
+  color: white !important;
+  position: absolute;
+  margin-left: 420px;
+  margin-top: 220px;
+  z:index:1
+  width: 20px;
+  height: 500px;
+}
+img {
+	border-radius: 30px;
+	padding-left: 50px;
+	box-shadow: 33 33 50px 50px #159957 inset;
+	width: 40%;
+	height: 80%;
+}
+
+
+.center2 {
+  display: block;
+  font-size: 60px;
+  color: white !important;
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 100px;
+  z:index:1
+  width: 50%;
+}
+
+
+
+.button {
+font-size: 0px;
+min-width: 0px;
+width: 150px;
+margin-left:300px;
+margin-top:750px;
+min-height: 22px;}
+
+.button::after {font-size: 30px;
+margin-left:300px;
+margin-top:750px;
+min-width: 0px;}
+
+.button::after {
+content: "No :(";
+margin-left:0px;
+margin-top:750px;
+}
+.button:hover::after {
+ content: "Yes Silly!";
+ margin-left:0px;
+ margin-top:750px;
+}
+
+.button:hover {
+background-color: green;
+border: 0px solid #1292e1;
+color: white !important;
+margin-left:300px;
+margin-top:750px;
+min-width: 0px;
+
+}
+
+.button2 {
+font-size: 0px;
+min-width: 0px;
+width: 170px;
+margin-left:700px;
+margin-top:750px;
+min-height: 22px;}
+
+.button2::after {font-size: 30px;
+margin-left:700px;
+margin-top:750px;
+min-width: 0px;}
+
+.button2::after {
+content: "YES!";
+margin-left:0px;
+margin-top:750px;
+}
+.button2:hover::after {
+ content: "I love you!";
+ margin-left:0px;
+ margin-top:750px;
+}
+
+.button2:hover {
+background-color: green;
+border: 0px solid #1292e1;
+color: white !important;
+margin-left:700px;
+margin-top:750px;
+min-width: 0px;
+
+}
