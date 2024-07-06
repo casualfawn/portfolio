@@ -9,7 +9,7 @@ body{
 
 
 .wrapper{
-	width: 1600px;
+	width: 100%;
 	max-width: 100%;
 	position: fixed;
 	z-index: 2;
@@ -679,8 +679,8 @@ main {
 	max-width: 1260px;
 
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
+	grid-template-columns: repeat(4, 2fr);
+	grid-template-rows: 2fr;
 	grid-column-gap: 30px;
 	align-items: center;
 }
@@ -708,7 +708,13 @@ main .card {
 	background-repeat: no-repeat;	
 }
 
-
+my-div-card{
+  //For center align
+  margin: 0 auto;
+  // For grow & shrink as per screen size change values as per your requirements
+  width: 80%;
+  height: 50%;
+}
 
 
 
@@ -716,7 +722,7 @@ main .card {
 
 
 main .card.card-1 {
-	background-image:  url('../img/proj112.png');
+	background-image:  url('../img/proj2prev.png');
 		left: -225px;
 						top: -250px;
 
@@ -729,14 +735,19 @@ main .card.card-1:onclick {
 }
 
 main .card.card-2 {
-	background-image: url("../img/proj2prev.png");					
-		top: -250px;
+	background-image: url("../img/proj2prev.png");
+			left: -225px;
+						top: -250px;
+
 
 
 }
+main .card.card-2:onclick {
+	width: 80px;
+}
 
 main .card.card-3 {
-	background-image: url('../img/proj32.png');
+	background-image: url('../img/proj2prev.png');
 			left: -175px;
 
 }

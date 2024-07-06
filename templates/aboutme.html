@@ -12,45 +12,352 @@
 	<label>
 		<!-- toggle button here -->
 		<input type="checkbox">
-		<div class="toggle">
+		<div class="toggle" >
 			<span class="common top_line"></span>
-			<span class="common middle_line"></span>
-			<span class="common bottom_line"></span>
+			<span class="common middle_line" ></span>
+			<span class="common bottom_line" ></span>
 		</div>
-		<div class="sidebar">
-		<h1>Menu</h1>
+		<div class="sidebar" style = 'width:15%;'>
+		<h1 style = 'margin-left:-165px;max-width:400px;'>Menu</h1>
 		<ul class = 'first-ul'>
-			<li style="--i:1"><a href="http://127.0.0.1:8000"><i class="fas fa-tv"></i>Home</a></li>
+			<li style="--i:1; font-size:35px;margin-left:-4%;"><a href="http://127.0.0.1:8000"><i class="fas fa-tv" style = 'font-size:20px;margin-left:20%'></i>Home</a></li>
 		
-			<li style="--i:3"><a href="http://127.0.0.1:8000/accounts/aboutme"><i class="far fa-user"></i>About Me</a></li>
+			<li style="--i:3; font-size:35px;margin-left:15%;"><a href="http://127.0.0.1:8000/accounts/aboutme"><i class="far fa-user"  style = 'font-size:25px;margin-left:1%'></i>About Me</a></li>
 			
-			<li style="--i:5"><a href="mailto:oelkuctmp@gmail.com"><i class="far fa-comment"></i>Email</a></li>
-			<li style="--i:6"><a href="https://github.com/casualfawn"><i class="far fa-folder"></i>Github</a></li>
-			<li style="--i:2"><a href="https://www.buymeacoffee.com/casualfawn"><i class="far fa-heart"></i>Buy Me Coffee</a></li>
-			<li style="--i:7"><a href="#"><i class="far fa-address-book"></i>Resume</a></li>
+			<li style = "font-size:35px;margin-left:48%; --i:5; margin-left:15%;"><a href="mailto:oelkuctmp@gmail.com"><i class="far fa-comment" style = 'font-size:25px;'></i>Email</a></li>
+			<li style="--i:3; font-size:35px;margin-left:15%;"><a href="https://github.com/casualfawn"><i class="far fa-folder" style = 'font-size:25px;margin-left:1%'></i>Github</a></li>
+			<li style="--i:3; font-size:30px;margin-left:15%;"><a href="https://www.buymeacoffee.com/casualfawn"><i class="far fa-heart"></i>Buy Me Coffee</a></li>
+			<li style="--i:3; font-size:35px;margin-left:15%;"><a href="#"><i class="far fa-address-book"></i>Resume</a></li>
 		</ul class = 'first-ul'>
 		</div>
-		<div class='wrapper'>
-			<div class = 'scroll'>
+		       <style type="text/css">
+            #div1
+            {position:absolute; width:100px; height:350px; margin-left:-200px;	}
+        	#div2
+				   {position:absolute; width:200px; height:350px; margin-left:-200px;	}
+			   </style>
+    <script>
+        function allowDrop(ev)
+        {
+            ev.preventDefault();
+        }
+        function drag(ev)
+        {
+            ev.dataTransfer.setData("Url","https://www.google.com");
+        }
+
+
+        function drop(ev)
+        {
+            ev.preventDefault();
+            window.location=ev.dataTransfer.getData("Url");
+        }
+
+		        function allowDrop2(ev)
+        {
+            ev.preventDefault();
+        }
+
+                function drag2(ev)
+        {
+            ev.dataTransfer.setData("Url","https://www.yahoo.com");
+        }
+
+        function drop2(ev)
+        {
+            ev.preventDefault();
+            window.location=ev.dataTransfer.getData("Url");
+        }
+
+
+
+
+    </script>
+
+		<div class='wrapper' style = 'margin-left:80%;width:80%;'>
+			<div class = 'scroll' style = 'z-index:1;margin-left:-10%;margin-top:-5%;width:90%;height:100%;'>
 				<center>
 				<p>
 					<div class = 'column'>
-					<img src='/static/img/aboutmelogo.png' class='wdn-stretch rounded-corners'/></p>
+
+
+
+					  <style type="text/css">
+        .speech-bubble{
+  --arrow-w:0.5em;
+  --arrow-h:1em;
+  --bubble-corners:0;
+  --w:12em;
+  --h:12em;
+  --border-size:3px;
+  --text-color:black;
+  --bubble-color:white;
+  --border-color:black;
+}
+.speech-bubble{
+  text-align:center;
+  font-family:cursive;
+  font-size:26px;
+  font-weight:bold;
+  color:var(--text-color);
+  background:var(--bubble-color);
+  padding:1em;
+  position:relative;
+  border-radius:var(--bubble-corners);
+  max-width:var(--w);
+  height:10%;
+  box-shadow:0 0 0 var(--border-size) var(--border-color);
+}
+
+.speech-bubble.round{
+  --bubble-corners:1em;
+}
+
+.speech-bubble.circle{
+  --bubble-corners:100%;
+  padding:2em;
+}
+
+.speech-bubble:before,.speech-bubble:after{
+  content:"";
+  position:absolute;
+  bottom:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+  left:50%;
+  border-style:solid;
+  border-width:var(--arrow-h) var(--arrow-w);
+  border-color:var(--bubble-color) transparent transparent;
+}
+
+.speech-bubble:before{
+  border-width:calc(var(--arrow-h) + var(--border-size)) calc(var(--arrow-w) + var(--border-size));
+  border-color:var(--border-color) transparent transparent;
+  bottom:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+  left:calc(50% - var(--border-size));
+}
+
+.speech-bubble.t:after{
+  border-color:transparent transparent var(--bubble-color);
+  bottom:auto;
+  top:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+}
+
+.speech-bubble.t:before{
+  border-width:calc(var(--arrow-h) + var(--border-size)) calc(var(--arrow-w) + var(--border-size));
+  border-color:transparent transparent var(--border-color);
+  bottom:auto;
+  top:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+}
+
+.speech-bubble.l:after{
+  border-color:transparent var(--bubble-color) transparent transparent;
+  bottom:auto;
+  border-width:var(--arrow-w) var(--arrow-h);
+  top:calc(50% - var(--arrow-w));
+  left:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+
+}
+
+.speech-bubble.l:before{
+  border-width:calc(var(--arrow-w) + var(--border-size)) calc(var(--arrow-h) + var(--border-size));
+  border-color:transparent var(--border-color) transparent transparent;
+  bottom:auto;
+  top:calc(50% - var(--arrow-w) - var(--border-size));
+  left:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+}
+
+.speech-bubble.r:after{
+  border-color:transparent transparent transparent var(--bubble-color);
+  bottom:auto;
+  left:auto;
+  border-width:var(--arrow-w) var(--arrow-h);
+  top:calc(50% - var(--arrow-w));
+  right:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+
+}
+
+.speech-bubble.r:before{
+  border-width:calc(var(--arrow-w) + var(--border-size)) calc(var(--arrow-h) + var(--border-size));
+  border-color:transparent transparent transparent var(--border-color);
+  bottom:auto;
+  left:auto;
+  top:calc(50% - var(--arrow-w) - var(--border-size));
+  right:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+
+}
+
+.speech-bubble.pop{
+  animation-name: pop;
+  animation-duration: 0.5s;
+  animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);
+}
+
+.speech-bubble.float{
+  animation-name: float-up;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
+
+}
+
+.speech-bubble.r.float{
+  animation-name: float-left;
+}
+
+.speech-bubble.l.float{
+  animation-name: float-right;
+
+}
+
+.speech-bubble.t.float{
+  animation-name: float-down;
+}
+
+@keyframes pop {
+  0% {transform: scale(0.8);}
+  80% {transform: scale(1.1);}
+  90% {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+
+@keyframes float-up {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(calc(-1 * var(--arrow-h)));}
+}
+
+@keyframes float-left {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(calc(-1 * var(--arrow-h)));}
+}
+
+@keyframes float-right {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(var(--arrow-h));}
+}
+
+@keyframes float-down {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(var(--arrow-h));}
+}
+
+						  .fadein {
+						  animation: 5s fadeIn;
+						   animation-fill-mode: forwards;
+						   visibility:hidden;
+						  }
+		@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+  opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+						  					  .fadeout {
+						  animation: 3s fadeout;
+						   animation-fill-mode: forwards;
+						   animation-delay: 16s;
+
+						  }
+		@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+
+  100% {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+						  .fadein2 {
+						  animation: 5s fadeIn2;
+						   animation-fill-mode: forwards;
+						   visibility:hidden;
+						   animation-delay:10s;
+						  }
+		@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+  opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+						  					  .fadeout2 {
+						  animation: 3s fadeout;
+						   animation-fill-mode: forwards;
+						   animation-delay: 18s;
+
+						  }
+		@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+
+  100% {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+			   </style>
+
+
+
+<div class = 'fadeout'>
+
+<div class = 'fadein'>
+<div class="speech-bubble l round float" style = 'position:absolute;z-index:5;margin-left:760px;margin-top:430px;'>Hi I'm Mark and I wear a lot of hats.</div>
+		</div>
+	</div>
+
+					<img src='/static/img/background.png'  style = 'position:absolute;z-index:-8;padding-top:90px;margin-left:-170px;'/></p>
+
+
+
+
+					<img src='/static/img/SELECT_GRID.png'  ondrop="drop(event)" ondragover="allowDrop(event)"  class='wdn-stretch rounded-corners' style = 'position:relative;z-index:-5;padding-top:120px;margin-left:20px;'/></p>
 					</div class = 'column'> 
 
-				<p style="text-align:left; width: 1600px; padding-left:350px; padding-top:250px; padding-bottom: 25px; font-size: 30px"><b>Greetings!</b> </p>
-<p style="text-align:left; width: 800px; padding-left:240px;padding-top:-100px; padding-bottom: 30px;  text-indent: 50px; color='white';">
- 	Thanks for checking out my portfolio. I hope my projects demonstrate my ability as a versatile analyst and developer. I believe in a swiss army knife approach for finding creative solutions to complex business problems. My core skills in data collection, analysis, and automation are greatly enhanced by my continously growing knowledge of data science methodology, web development, and several coding languages.</p> 
- 	<p style="text-align:left; width: 800px; padding-left:240px; text-indent: 50px; padding-bottom: 30px;color='white';">
- 		I am well versed in R for statistical analyses and reporting although most of my time in R is spent cleaning and formatting datasets or performing database queries. I have robust skills in developing R shiny web applications for a variety of use-cases. Whether these skills in Shiny are used for reporting metrics, data collection and management, or public-facing web apps, there are a multitude of ways they may benefit projects I am hired for. While I am skilled in industry-standard reporting and automation tools provided by platforms like Microsoft, I loathe the day where I am required to use Power BI when an endless number of more flexible tools exist with opensource technologies. </p>
-<p style="text-align:left; width: 800px; padding-left:240px; padding-bottom: 30px; text-indent: 50px; color='white';">
-Currently, I am improving my skills in python's django framework for web development and working towards a deeper understanding of machine learning, statistical modeling, and the Keras API. Again, my passion is utilizing opensource tools and coding languages to create solutions for companies that might seem impossible. </p> 
-<p style="text-align:left; width: 800px; padding-left:240px; color='white';">
-Please reach out to me via <a href="mailto:oelkuctmp@gmail.com"> oelkuctmp@gmail.com </a> to get in touch.
-				</p> 
+				<p style="text-align:left; width: 600px; padding-left:420px; padding-top:300px; padding-bottom: 25px; font-size: 30px;"><b style = 'margin-left:-151%'></b> </p>
+<p style="text-align:left; width: 800px; margin-left:230px;padding-top:-100px; padding-bottom: 10px;  text-indent: 70px; color='white';">
+  </p>
+					<div class = 'fadein'>
+ 	<p style="text-align:left;margin-left:-90% width: 600px;text-indent:-25%; text-size:30px; padding-bottom:0px;color='white';opacity:0;">
+ 		Drag a hat to my head to find what you're shopping for. </p>
+<p style="text-align:left; width: 800px; text-indent:14%; padding-bottom: 0px;  color='white';opacity:0;">
+Use the FSD hat to see my entire showcase</p>
+					</div>
+
+			<div class = 'column' style = 'margin-left:1%;height:50px;'>
+				<img src="/static/img/weege.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'margin-left:-80px;margin-top:314px;height:300%;'>
+				<img src="/static/img/swe.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'height:11.8%;margin-left:-143px;padding-left:245px;position:absolute;margin-top:313px;'>
+				<img src="/static/img/web.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'height:11.8%;margin-left:250px;position:absolute;padding-left:105px;margin-top:314px;'>
+								<img src="/static/img/web.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'height:11.8%;margin-left:500px;position:absolute;padding-left:105px;margin-top:314px;'>
+
+
+			</div>
+
+
 			</center>
 			</div>
 	</div>
+
+
 
 
 

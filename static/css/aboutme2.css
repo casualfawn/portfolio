@@ -18,8 +18,7 @@
 	color: #fff;
 	font-weight: 800;
 	text-align: right;
-	padding: 10px 0;
-	padding-right: 30px;
+	padding-right: 0px;
 	pointer-events: none;
 }
 .first-ul{
@@ -112,11 +111,11 @@ input[type='checkbox']:checked ~  .sidebar ul li{
 .scroll{
 	position: fixed;
 	background-color: transparent;
-	width: 840px;
+	width: 1840px;
 	height: 730px;
 	margin-right: 10px;
 	margin-left: 10px;
-	overflow-x: hidden;
+	overflow-x: auto;
 	overflow-y: auto;
 	text-align:justify;
 	left: 405px;
@@ -124,7 +123,7 @@ input[type='checkbox']:checked ~  .sidebar ul li{
 }
 
 .wrapper{
-	width: 800px;
+	width: 1800px;
 	max-width: 100%;
 	position: fixed;
 	z-index: 2;
@@ -199,14 +198,14 @@ body{
 
 img {
 	border-radius: 30px;
-	padding-left: 540px;
 
 	box-shadow: 33 33 50px 50px #159957 inset;
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 10.33%;
   padding-left: 50px;
+  margin-left:400px;
   padding-top: -100px;
 }
 
