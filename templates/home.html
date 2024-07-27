@@ -6,7 +6,7 @@
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <title> Proj1 </title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link rel='stylesheet' href="{% static 'css/newstyleanimate4.css' %}">
 </head>
 <body>
@@ -20,119 +20,54 @@
 		<span class="common middle_line"></span>
 		<span class="common bottom_line"></span>
 	</div>
-	<div class="sidebar">
-		<h1>Menu</h1>
+		<div class="sidebar" style = 'width:15%;'>
 		<ul class = 'first-ul'>
-			<li style="--i:1"><a href="http://127.0.0.1:8000"><i class="fas fa-tv"></i>Home</a></li>
-		
-			<li style="--i:3"><a href="http://127.0.0.1:8000/accounts/aboutme"><i class="far fa-user"></i>About Me</a></li>
-			
-			<li style="--i:5"><a href="mailto:oelkuctmp@gmail.com"><i class="far fa-comment"></i>Email</a></li>
-	<li style="--i:6"><a href="https://github.com/casualfawn"><i class="far fa-folder"></i>Github</a></li>
-			<li style="--i:2"><a href="https://www.buymeacoffee.com/casualfawn"><i class="far fa-heart"></i>Buy Me Coffee</a></li>
-			<li style="--i:7"><a href="#"><i class="far fa-address-book"></i>Resume</a></li>
+						<li style="--i:1; font-size:25px;margin-left:27%;margin-top:13.5%;"><a href="http://127.0.0.1:8000">Menu</a></li>
+
+			<li style="--i:1; font-size:25px;margin-left:3.3%;margin-top:25%;"><a href="http://127.0.0.1:8000"><i class="fas fa-tv" style = 'font-size:20px;margin-left:15%'></i>Home</a></li>
+
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="http://127.0.0.1:8000/accounts/aboutme"><i class="far fa-user"  style = 'font-size:25px;margin-left:-5%;'></i>SC Code & DS</a></li>
+
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="mailto:oelkuctmp@gmail.com"><i class="far fa-comment" style = 'font-size:25px;margin-left:-5%'></i>Email Me</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="https://github.com/casualfawn"><i class="far fa-folder" style = 'font-size:25px;margin-left:-5%'></i>Github</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="https://www.buymeacoffee.com/casualfawn"><i class="far fa-heart" style = 'margin-left:-5%;'> </i> Coffee</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="#"><i class="far fa-address-book" style = 'margin-left:-5%;'></i>Resume</a></li>
 		</ul class = 'first-ul'>
-	</div>
-</label>
+		</div>
+	<div class='wrapper'>
 
-
-
-
-	<div class='wrapper' style = 'overflow-y:scroll;height:1800px;margin-left:20%;margin-top:-5%;width:100%;'>
-
-
-		<main style = 'margin-left:5%;height:100%;'>
-
-
-	<div class='card card-1' style = 'margin-top:-200%;margin-left:40%; height:339.817px;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj1/"'>
+		<div class = 'scroll'>
+		<main>
+	<div class='card card-1' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj1/"'>
 		<div class='content' >
-			<h5>Deep Learning for OCR</h5>
-			<p>
-				Case study of implemented deep learning model for ocular character recognition of critical process measures. Written in python, uses the tensorflow API to model and predict values from continuous stream of images.
-
+			<h5 style = 'margin-left:-8%; margin-top:6%;'>Iceland Wares <br/>Ecommerce</h5>
+			<p style = 'width:250px;font-size:18px;margin-left:-2%;margin-top:-9%;width:89%;text-align:center;'>
+				E-Commerce site for </br> Icelandic style built with Django.</br> Shop by specific collections.
 			</p>
 		</div>
 		</a>
 	</div>
-	<div class='card card-2' style = 'margin-top:-200%;margin-left:40%;  height:339.817px;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
+	<div class='card card-2'  style = "background-image: url('/static/img/webdev2_v2.png');" onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
 		<div class='content'>
-			<h5>Shelter Management System and Predictive Modeling</h5>
-			<p>
-				Unique example of a web-application for managing and maintaining a mock-animal shelter's animal records, visit scheduling, and database. Includes an example of predictive modeling for matching at-risk animals to scheduled visitors who are likely to adopt.
-
+			<h5 style = 'margin-left:-8%; margin-top:6%;'>Biofactura <br/>Company Website</h5>
+			<p style = 'width:250px;font-size:18px;margin-left:-4%;margin-top:-4%;width:89%;text-align:center;'>
+				Website created and mantained for a successful start-up Biotech company
 			</p>
 		</div>
 	</a>
 	</div>
-	<div class='card card-3'style = 'margin-top:-200%;margin-left:40%;	height:339.817px;width:321.75;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj3/"'>
+	<div class='card card-3' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj3/"'>
 		<div class='content'>
-			<h5>Parameter Streaming and Trends</h5>
-			<p>
-				Bread and Butter shiny application for measurements, tables, and visuals.
-
-			</p>
-		</div>
-	</a>
-	</div>
-
-			<div class='card card-2' style = 'margin-top:-200%;margin-left:62%; height:339.817px;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
-				<div class='content'>
-					<h5>Shelter Management System and Predictive Modeling</h5>
-					<p>
-					Unique example of a web-application for managing and maintaining a mock-animal shelter's animal records, visit scheduling, and database. Includes an example of predictive modeling for matching at-risk animals to scheduled visitors who are likely to adopt.
-					</p>
-				</div>
-				</a>
-			</div>
-
-			<div class='card card-2' style = 'margin-left:30%;margin-top:-550%;height:339.817px;'  onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
-				<div class='content'>
-					<h5>Shelter Management System and Predictive Modeling</h5>
-					<p>
-					Unique example of a web-application for managing and maintaining a mock-animal shelter's animal records, visit scheduling, and database. Includes an example of predictive modeling for matching at-risk animals to scheduled visitors who are likely to adopt.
-
-					</p>
-				</div>
-				</a>
-			</div>
-
-
-				<div class='card card-2' style = 'margin-left:41%;margin-top:-550%;height:339.817px;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
-		<div class='content'>
-			<h5>Shelter Management System and Predictive Modeling</h5>
-			<p>
-				Unique example of a web-application for managing and maintaining a mock-animal shelter's animal records, visit scheduling, and database. Includes an example of predictive modeling for matching at-risk animals to scheduled visitors who are likely to adopt.
-
+			<h5 style = 'margin-left:-8%; margin-top:6%;'>Spectrum <br/>Events Website</h5>
+			<p style = 'width:250px;font-size:18px;margin-left:-2%;margin-top:-9%;width:89%;text-align:center;'>
+				With a tight 2day deadline, </br> this site was developed for managing a University's </br> LGBTQ+ event calendar.
 			</p>
 		</div>
 	</a>
 	</div>
 
-
-				<div class='card card-2' style = 'margin-left:52%;margin-top:-550%;height:339.817px;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
-		<div class='content'>
-			<h5>Shelter Management System and Predictive Modeling</h5>
-			<p>
-				Unique example of a web-application for managing and maintaining a mock-animal shelter's animal records, visit scheduling, and database. Includes an example of predictive modeling for matching at-risk animals to scheduled visitors who are likely to adopt.
-
-			</p>
+</div>
 		</div>
-	</a>
-	</div>
-
-
-				<div class='card card-2' style = 'margin-top:-550%;margin-left:62%;height:339.817px;' onclick='window.location.href="http://127.0.0.1:8000/accounts/proj2/"'>
-		<div class='content'>
-			<h5>Shelter Management System and Predictive Modeling</h5>
-			<p>
-				Unique example of a web-application for managing and maintaining a mock-animal shelter's animal records, visit scheduling, and database. Includes an example of predictive modeling for matching at-risk animals to scheduled visitors who are likely to adopt.
-
-			</p>
-		</div>
-	</a>
-	</div>
-
-
 </main>
 </div>
 
@@ -140,6 +75,7 @@
 
 
 
+</label>
 <div class='objects'>
 	<ul class='box'>
 		<li></li>

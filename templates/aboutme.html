@@ -8,33 +8,34 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
 	<link rel='stylesheet' href="{% static 'css/aboutme2.css' %}">
 </head>
-<body>
+<body style = 'max-width:100%;'>
 	<label>
 		<!-- toggle button here -->
 		<input type="checkbox">
-		<div class="toggle" >
+		<div class="toggle" style = 'margin-left:.9%;' >
 			<span class="common top_line"></span>
 			<span class="common middle_line" ></span>
 			<span class="common bottom_line" ></span>
 		</div>
 		<div class="sidebar" style = 'width:15%;'>
-		<h1 style = 'margin-left:-165px;max-width:400px;'>Menu</h1>
 		<ul class = 'first-ul'>
-			<li style="--i:1; font-size:35px;margin-left:-4%;"><a href="http://127.0.0.1:8000"><i class="fas fa-tv" style = 'font-size:20px;margin-left:20%'></i>Home</a></li>
+						<li style="--i:1; font-size:25px;margin-left:27%;margin-top:13.5%;"><a href="http://127.0.0.1:8000">Menu</a></li>
+
+			<li style="--i:1; font-size:25px;margin-left:3.3%;margin-top:25%;"><a href="http://127.0.0.1:8000"><i class="fas fa-tv" style = 'font-size:20px;margin-left:15%'></i>Home</a></li>
 		
-			<li style="--i:3; font-size:35px;margin-left:15%;"><a href="http://127.0.0.1:8000/accounts/aboutme"><i class="far fa-user"  style = 'font-size:25px;margin-left:1%'></i>About Me</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="http://127.0.0.1:8000/accounts/aboutme"><i class="far fa-user"  style = 'font-size:25px;margin-left:-5%;'></i>SC Code & DS</a></li>
 			
-			<li style = "font-size:35px;margin-left:48%; --i:5; margin-left:15%;"><a href="mailto:oelkuctmp@gmail.com"><i class="far fa-comment" style = 'font-size:25px;'></i>Email</a></li>
-			<li style="--i:3; font-size:35px;margin-left:15%;"><a href="https://github.com/casualfawn"><i class="far fa-folder" style = 'font-size:25px;margin-left:1%'></i>Github</a></li>
-			<li style="--i:3; font-size:30px;margin-left:15%;"><a href="https://www.buymeacoffee.com/casualfawn"><i class="far fa-heart"></i>Buy Me Coffee</a></li>
-			<li style="--i:3; font-size:35px;margin-left:15%;"><a href="#"><i class="far fa-address-book"></i>Resume</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="mailto:oelkuctmp@gmail.com"><i class="far fa-comment" style = 'font-size:25px;margin-left:-5%'></i>Email Me</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="https://github.com/casualfawn"><i class="far fa-folder" style = 'font-size:25px;margin-left:-5%'></i>Github</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="https://www.buymeacoffee.com/casualfawn"><i class="far fa-heart" style = 'margin-left:-5%;'> </i> Coffee</a></li>
+			<li style="--i:3; font-size:25px;margin-left:19%;"><a href="#"><i class="far fa-address-book" style = 'margin-left:-5%;'></i>Resume</a></li>
 		</ul class = 'first-ul'>
 		</div>
 		       <style type="text/css">
             #div1
-            {position:absolute; width:100px; height:350px; margin-left:-200px;	}
+            {position:absolute;margin-left:-10%;;	}
         	#div2
-				   {position:absolute; width:200px; height:350px; margin-left:-200px;	}
+				   {position:absolute; margin-left:-10%;	}
 			   </style>
     <script>
         function allowDrop(ev)
@@ -69,19 +70,12 @@
             window.location=ev.dataTransfer.getData("Url");
         }
 
-
-
-
     </script>
 
-		<div class='wrapper' style = 'margin-left:80%;width:80%;'>
-			<div class = 'scroll' style = 'z-index:1;margin-left:-10%;margin-top:-5%;width:90%;height:100%;'>
-				<center>
-				<p>
-					<div class = 'column'>
+<div class='wrapper' style = 'margin-left:80%;width:80%;'>
 
 
-
+<!-->
 					  <style type="text/css">
         .speech-bubble{
   --arrow-w:0.5em;
@@ -240,7 +234,7 @@
 }
 
 						  .fadein {
-						  animation: 5s fadeIn;
+						  animation: 1.5s fadeIn;
 						   animation-fill-mode: forwards;
 						   visibility:hidden;
 						  }
@@ -249,9 +243,6 @@
     opacity: 0;
   }
 
-  30% {
-  opacity: 0;
-  }
   100% {
     visibility: visible;
     opacity: 1;
@@ -259,9 +250,9 @@
 }
 
 						  					  .fadeout {
-						  animation: 3s fadeout;
+						  animation: 4s fadeout;
 						   animation-fill-mode: forwards;
-						   animation-delay: 16s;
+						   animation-delay: 22s;
 
 						  }
 		@keyframes fadeout {
@@ -277,17 +268,34 @@
 }
 
 						  .fadein2 {
-						  animation: 5s fadeIn2;
+						  animation: 5s fadeIn;
 						   animation-fill-mode: forwards;
 						   visibility:hidden;
-						   animation-delay:10s;
+						   animation-delay:23s;
 						  }
 		@keyframes fadeIn {
   0% {
     opacity: 0;
   }
 
-  30% {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+  }
+  .fadein3 {
+						  animation: 5s fadeIn;
+						   animation-fill-mode: forwards;
+						   visibility:hidden;
+						   						   animation-delay:24s;
+
+						  }
+		@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
   opacity: 0;
   }
   100% {
@@ -296,42 +304,152 @@
   }
 }
 
-						  					  .fadeout2 {
-						  animation: 3s fadeout;
-						   animation-fill-mode: forwards;
-						   animation-delay: 18s;
 
-						  }
-		@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-
-
-  100% {
-    visibility: visible;
-    opacity: 0;
-  }
 }
 
 			   </style>
 
 
 
-<div class = 'fadeout'>
+<style>
+.wrap {
+  position: relative;
+  width: 200px;
+}
 
-<div class = 'fadein'>
-<div class="speech-bubble l round float" style = 'position:absolute;z-index:5;margin-left:760px;margin-top:430px;'>Hi I'm Mark and I wear a lot of hats.</div>
-		</div>
+.inner {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+</style>
+
+<div class="wrap">
+
+
+    <img src='/static/img/select_grid_v2.4.png' ondrop="drop(event)" ondragover="allowDrop(event)" style = 'width:1400px;margin-left:-728%;margin-top:-50%;'>
+	<a class = 'inner' >
+			<div class = 'fadeout' >
+
+
+	<div class = 'fadeout'>
+
+			<div class = 'fadein'>
+<style>
+				@font-face {
+   font-family: "font1";
+   src: url('/static/css/font1.ttf') format('truetype');
+}
+</style>
+				<div class="speech-bubble l round float" style = 'font-family:font1;height:20%;position:absolute;z-index:10;margin-left:-259%;margin-top:46.9%;'>Hi I'm Mark and I wear a lot of hats.
+
+				</div>
+			</div>
+
+
+
+
+
+
+    <img id = reloadgif src='/static/img/crt2_v4.gif?dummy=8484744'  style =
+	'border-radius:2.5%;
+	margin-top:213.5%;
+    margin-left:-1162.5%;
+    width:121.9%;
+	height:192.925px;'>
+
+
+	</a>
+
 	</div>
 
-					<img src='/static/img/background.png'  style = 'position:absolute;z-index:-8;padding-top:90px;margin-left:-170px;'/></p>
+
+	<a class = 'inner'>
+
+    <img id = reloadgif2 src='/static/img/crt3_v4.gif'  style =
+	'border-radius:2.5%;
+	margin-top:213.5%;
+    margin-left:-862.5%;
+    width:121.9%;
+	height:192.925px;'>
+	</a>
+<a class = 'inner'>
+
+    <img id = reloadgif3 src='/static/img/crtv_v1.gif'  style =
+	'border-radius:2.5%;
+	margin-top:213.5%;
+    margin-left:-562.5%;
+    width:121.9%;
+	height:192.925px;'>
+	</a>
+<a class = 'inner'>
+
+    <img id = reloadgif4 src='/static/img/crt_v2.gif'  style =
+	'border-radius:2.5%;
+	margin-top:213.5%;
+    margin-left:-261.5%;
+    width:121.9%;
+	height:192.925px;'>
+	</a>
+<script language="javascript" type="text/javascript">
+    var d = new Date();
+    document.getElementById("reloadgif").src =
+      "/static/img/crt2_v4.gif?ver=" +
+       d.getTime();
+	  var d2 = new Date();
+    document.getElementById("reloadgif2").src =
+      "/static/img/crt3_v4.gif?ver=" +
+       d2.getTime();
+	var d3 = new Date();
+    document.getElementById("reloadgif3").src =
+      "/static/img/crt4_v1.gif?ver=" +
+       d3.getTime();
+	var d4 = new Date();
+    document.getElementById("reloadgif4").src =
+      "/static/img/crt_v2.gif?ver=" +
+       d4.getTime();
+</script>
+
+</div>
+		<div class = 'fadein2'>
+				<a class = 'inner'>
+
+			<div class="speech-bubble l round float" style = 'font-family:font1;height:190px;position:absolute;z-index:6;margin-left:-710px;margin-top:70px;'>Click or Drag a hat to my head to find what you're shopping for.
+
+				</div>
+				</a>
+	</div>
+
+		<div class = 'fadein3'>
+		<a class = 'inner' style = margin-left:-50%;>
+			<img  src="/static/img/titlesv1.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'position:absolute;z-index:9;width:1170px;;height:40px;margin-left:-1390px;margin-top:365px;'>
+			<img  src="/static/img/weege.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'position:absolute;z-index:9;width:150px;;height:150px;margin-left:-1350px;margin-top:445px;'>
+		</a>
+	<div class = 'fadein3'>
+		<a class = 'inner' style = margin-left:-50%;>
+			<img  src="/static/img/swe.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'position:absolute;z-index:9;width:150px;;height:150px;margin-left:-1050px;margin-top:445px;'>
+		</a>
+	</div>
+			<div class = 'fadein3'
+	<div class = 'fadein3'>
+		<a class = 'inner' style = margin-left:-50%;>
+			<img  src="/static/img/web.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'position:absolute;z-index:9;width:150px;;height:150px;margin-left:-750px;margin-top:445px;'>
+		</a>
+	</div>
+	<div class = 'fadein3'>
+		<a href = 'https://www.yahoo.com' class = 'inner' style = margin-left:-50%;>
+			<img  src="/static/img/fin.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'position:absolute;z-index:9;width:150px;;height:150px;margin-left:-450px;margin-top:445px;'>
+		</a>
+	</div>
 
 
 
+				</div>
 
-					<img src='/static/img/SELECT_GRID.png'  ondrop="drop(event)" ondragover="allowDrop(event)"  class='wdn-stretch rounded-corners' style = 'position:relative;z-index:-5;padding-top:120px;margin-left:20px;'/></p>
-					</div class = 'column'> 
+
+</div>
+
+
 
 				<p style="text-align:left; width: 600px; padding-left:420px; padding-top:300px; padding-bottom: 25px; font-size: 30px;"><b style = 'margin-left:-151%'></b> </p>
 <p style="text-align:left; width: 800px; margin-left:230px;padding-top:-100px; padding-bottom: 10px;  text-indent: 70px; color='white';">
@@ -343,15 +461,31 @@
 Use the FSD hat to see my entire showcase</p>
 					</div>
 
-			<div class = 'column' style = 'margin-left:1%;height:50px;'>
-				<img src="/static/img/weege.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'margin-left:-80px;margin-top:314px;height:300%;'>
-				<img src="/static/img/swe.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'height:11.8%;margin-left:-143px;padding-left:245px;position:absolute;margin-top:313px;'>
-				<img src="/static/img/web.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'height:11.8%;margin-left:250px;position:absolute;padding-left:105px;margin-top:314px;'>
-								<img src="/static/img/web.png" draggable="true" ondragstart="drag2(event)" id="drag2" style = 'height:11.8%;margin-left:500px;position:absolute;padding-left:105px;margin-top:314px;'>
 
 
-			</div>
+				 <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox2 {
+            display: grid;
+            height: 50vh;
+            position:relative;
+        }
+        .center-fit2 {
+            max-width: 50vh;
+            max-height: 50vh;
+            margin: auto;
+        }
+    </style>
 
+
+
+
+
+
+			</main>
 
 			</center>
 			</div>

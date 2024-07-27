@@ -20,7 +20,14 @@ from django.views.generic.base import TemplateView # new
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('webdev', TemplateView.as_view(template_name='home.html'), name='Web Dev'),
+    path('ds', TemplateView.as_view(template_name='ds.html'), name='Data Science'),
+    path('swe', TemplateView.as_view(template_name='swe.html'), name='SWE'),
+    path('FSE', TemplateView.as_view(template_name='FSE.html'), name='FULLSTACK'),
+    path('Alerts', TemplateView.as_view(template_name='Text Alerts and Monitoring.html'), name = 'Alerts'),
+    path('CNN', TemplateView.as_view(template_name='CNN Classification.html'), name='CNN'),
+    path('ERP', TemplateView.as_view(template_name='ERP Page.html'), name='ERP'),
+
     path('vday/', TemplateView.as_view(template_name = 'vday.html'), name = 'vday'),
     path('accounts/proj1/', TemplateView.as_view(template_name='index4.html'), name='proj1'),
     path('accounts/aboutme/', TemplateView.as_view(template_name='aboutme.html'), name='aboutme'),

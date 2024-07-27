@@ -716,15 +716,11 @@ my-div-card{
   height: 50%;
 }
 
-
-
-
-
-
 main .card.card-1 {
-	background-image:  url('../img/proj2prev.png');
-		left: -225px;
-						top: -250px;
+	background-image:  url('/static/img/webdev1_v1.png');
+	background-size: 321px 480px;
+		left: -55px;
+						top: -350px;
 
 
 
@@ -735,9 +731,10 @@ main .card.card-1:onclick {
 }
 
 main .card.card-2 {
-	background-image: url("../img/proj2prev.png");
-			left: -225px;
-						top: -250px;
+	background-image: url("/static/img/webdev2_v3.png");
+		background-size: 321px 480px;
+			left: 30px;
+						top: -350px;
 
 
 
@@ -747,8 +744,10 @@ main .card.card-2:onclick {
 }
 
 main .card.card-3 {
-	background-image: url('../img/proj2prev.png');
-			left: -175px;
+	background-image: url('/static/img/webdev3_v3.png');
+		background-size: 321px 480px;
+			left: 120px;
+			top:-350px;
 
 }
 
@@ -794,7 +793,7 @@ main .card.card-1 .content h5 {
 	line-height: 30px;
 }
 main .card.card-2 .content p {
-	margin-left: -10px;
+	margin-left:-20px;
 	margin-top: -20px;
 	font-size: 12px;
 	width: 310px;
